@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Alex Go">
     <link rel="stylesheet" href="style.css">
-    <script src=" https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script src="https://kit.fontawesome.com/4c2e380eb9.js" crossorigin="anonymous"></script>
     <title>Alex Go</title>
 </head>
 
 <body>
     <header>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">Présentation</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="home">
-        <div class="home-content">
+    <section id="hero">
+        <div class="hero-content">
             <h1 id="text">Alex Go</h1>
         </div>
         <div class="images">
@@ -39,77 +42,248 @@
         </div>
     </section>
 
-    <section class="two">
-        <h1>TEST</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias enim suscipit deleniti voluptas,
-            repellendus in odio ad sint rerum ipsam eligendi minus tempora accusamus repudiandae deserunt dolor
-            doloribus quis culpa tenetur! Ratione saepe inventore, officiis quod voluptas, officia dolore voluptates
-            labore, delectus aliquam ea sunt quam harum. Obcaecati inventore assumenda tenetur aliquam. Eius delectus
-            esse ullam ad ab repellendus sequi, beatae odit assumenda nihil reprehenderit, saepe officiis explicabo
-            nulla.<br /><br /></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias enim suscipit deleniti voluptas,
-            repellendus in odio ad sint rerum ipsam eligendi minus tempora accusamus repudiandae deserunt dolor
-            doloribus quis culpa tenetur! Ratione saepe inventore, officiis quod voluptas, officia dolore voluptates
-            labore, delectus aliquam ea sunt quam harum. Obcaecati inventore assumenda tenetur aliquam. Eius delectus
-            esse ullam ad ab repellendus sequi, beatae odit assumenda nihil reprehenderit, saepe officiis explicabo
-            nulla.<br /><br /></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias enim suscipit deleniti voluptas,
-            repellendus in odio ad sint rerum ipsam eligendi minus tempora accusamus repudiandae deserunt dolor
-            doloribus quis culpa tenetur! Ratione saepe inventore, officiis quod voluptas, officia dolore voluptates
-            labore, delectus aliquam ea sunt quam harum. Obcaecati inventore assumenda tenetur aliquam. Eius delectus
-            esse ullam ad ab repellendus sequi, beatae odit assumenda nihil reprehenderit, saepe officiis explicabo
-            nulla.<br /><br /></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias enim suscipit deleniti voluptas,
-            repellendus in odio ad sint rerum ipsam eligendi minus tempora accusamus repudiandae deserunt dolor
-            doloribus quis culpa tenetur! Ratione saepe inventore, officiis quod voluptas, officia dolore voluptates
-            labore, delectus aliquam ea sunt quam harum. Obcaecati inventore assumenda tenetur aliquam. Eius delectus
-            esse ullam ad ab repellendus sequi, beatae odit assumenda nihil reprehenderit, saepe officiis explicabo
-            nulla.<br /><br /></p>
+    <section id="about">
+        <h2>Présentation</h2>
+        <div class="about-me">
+            <img src="images/alex.jpg" alt="Alex Go">
+            <p>
+                Développeur front-end passionné par les technologies web, je suis actuellement à la recherche d'un poste
+                en tant que développeur front-end sur la
+                région parisienne.<br><br>
 
-        <script>
-            const lenis = new Lenis({})
+                Au cours de ma formation de développeur chez Openclassrooms, j'ai acquis de solides compétences en
+                développement front-end en travaillant sur des projets variés.<br><br>
 
-            function raf(time) {
-                lenis.raf(time)
-                requestAnimationFrame(raf)
-            }
-            requestAnimationFrame(raf)
+                Je suis à l'aise avec les technologies web telles que HTML, CSS, JavaScript, React et Node.js.
+                J'ai également une bonne connaissance des outils de développement tels que Git et Webpack ainsi
+                que de l'optimisation SEO.<br><br>
 
-            let image2 = document.querySelector('.img-2');
-            let image3 = document.querySelector('.img-3');
-            let image4 = document.querySelector('.img-4');
-            let image5 = document.querySelector('.img-5');
-            let image6 = document.querySelector('.img-6');
-            let image7 = document.querySelector('.img-7');
-            let image8 = document.querySelector('.img-8');
-            let image9 = document.querySelector('.img-9');
-            let image10 = document.querySelector('.img-10');
+                Je suis actuellement en train de me perfectionner aux technologies 3D WebGL grâce à la librairie
+                Three.js.<br><br>
 
-            let text = document.getElementById('text');
-
-            window.addEventListener('scroll', function () {
-                var value = window.scrollY;
-
-                image2.style.bottom = value * -0.2 + 'px';
-                image3.style.bottom = value * -0.3 + 'px';
-                image4.style.bottom = value * -0.4 + 'px';
-                image5.style.bottom = value * -0.5 + 'px';
-                image6.style.bottom = value * -0.6 + 'px';
-                image7.style.bottom = value * -0.7 + 'px';
-                image8.style.bottom = value * -0.3 + 'px';
-                image9.style.bottom = value * -0.4 + 'px';
-                image10.style.bottom = value * -0.5 + 'px';
-                text.style.bottom = value * -1.2 + 'px';
-
-                let opacity = 1 - (value / 500);
-                
-                opacity = Math.max(0, Math.min(1, opacity));
-
-                text.style.opacity = opacity;
-            })
-        </script>
-
+            </p>
+        </div>
     </section>
+
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-content">
+            <div class="portfolio-item">
+                <a href="https://github.com/alexgo-dev/P8-Kasa">
+                    <img src="images/kasa.png" alt="Kasa">
+                </a>
+                <h3>Kasa</h3>
+                <p>
+                    Avec ce projet, j'ai acquis de solides compétences en développement front-end en utilisant React
+                    et React Router. J'ai appris à créer des interfaces utilisateur modernes et réactives, ainsi
+                    qu'à gérer efficacement la navigation entre les différentes pages de l'application.<br><br>
+
+                    En travaillant sur la logique de présentation des données et les composants React, j'ai
+                    consolidé ma maîtrise de ces technologies essentielles. De plus, en utilisant des maquettes
+                    fournies et des données simulées, j'ai pu me concentrer pleinement sur le développement
+                    front-end, ce qui m'a permis de gagner en expérience pratique.<br><br>
+
+                    Enfin, grâce à l'utilisation de Create React App et de Node.js, j'ai pu rapidement mettre en
+                    place l'environnement de développement nécessaire pour mener à bien ce projet.<br><br>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/alexgo-dev/P9-Nina_Carducci">
+                    <img src="images/nina.png" alt="Nina">
+                </a>
+                <h3>Nina Carducci</h3>
+                <p>Durant ce projet, j'ai travaillé en tant que développeur freelance pour optimiser le référencement
+                    du site d'une photographe, en améliorant sa performance et son accessibilité. Ma première tâche a
+                    été
+                    d'identifier les problèmes de chargement et de référencement de ce site.<br><br>
+
+                    J'ai ensuite proposé des recommandations pour améliorer la vitesse de chargement, la structure
+                    du code et le référencement. J'ai appliqué ces recommandations en modifiant le code du site,
+                    avec pour objectif d'améliorer les performances et l'accessibilité du site pour un meilleur
+                    référencement sur les moteurs de recherche.<br><br>
+
+                    J'ai du utiliser des outils tels que Lighthouse et Wave afin d'évaluer
+                    la performance et l'accessibilité du site. Finalement, j'ai du créer un rapport illustrant les
+                    résultats
+                    avant et après les modifications. Ce rapport comprenait des captures d'écran des audits
+                    effectués, ainsi que des explications détaillées sur les changements apportés et leur impact sur
+                    le référencement et l'accessibilité du site.</p>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/alexgo-dev/P10-724Events">
+                    <img src="images/724.png" alt="">
+                </a>
+                <h3>724Events</h3>
+                <p>Dans ce projet, j'ai travaillé sur le débogage et la finalisation du développement d'un site
+                    single-page-application<br><br>
+
+                    Mon premier objectif a été d'examiner le code existant en utilisant "React DevTools" afin d'
+                    identifier et comprendre les problèmes et bugs signalés sur site web avant correction.<br><br>
+
+                    J'ai du utiliser la librairie de test "Jest" ainsi que "React Testing Library" afin de vérifier le
+                    bon fonctionnement des composants
+                    avec des tests unitaires et fonctionnels.
+
+                    En parallèle, j'ai également du compléter un cahier de recette, document détaillant tous les
+                    scénarios de test nécessaires pour vérifier le bon fonctionnement du site.<br><br>
+
+
+                </p>
+            </div>
+            <div class="portfolio-item last">
+                <a href="https://github.com/alexgo-dev/P11-Argent_Bank">
+                    <img src="images/argentbank.png" alt="724Events">
+                </a>
+                <h3>Argent Bank</h3>
+                <p>Au cours de ce dernier projet, j'ai été chargé du développement front-end d'une application bancaire
+                    en
+                    utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive.<br><br>
+
+                    Ma mission principale a consisté à intégrer le front-end avec le back-end via des appels API.
+                    J'ai écrit des appels à l'API REST pour connecter les deux parties de l'application,
+                    garantissant ainsi une communication fluide entre le client et le serveur.<br><br>
+
+                    Redux a été utilisé pour gérer les données de l'application, assurant ainsi un
+                    état global cohérent à travers l'application.<br><br>
+
+                    j'ai utilisé Swagger pour définir les points d'accès et décrire les différentes routes et
+                    actions nécessaires pour l'API.<br><br>
+                </p>
+                </div>
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="container">
+            <div class="form-container">
+                <h3>Pour toute demande d'information :</h3>
+                <form method="POST" id="form">
+
+                    <input type="hidden" name="access_key" value="bf9b226a-fdf8-4cb2-8824-9710c4244391">
+
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="submit">
+                    <div class="h-captcha" data-captcha="true"></div>
+
+
+                    <div id="result"></div>
+
+                </form>
+
+                <script src="https://web3forms.com/client/script.js" async defer></script>
+
+                <script>
+                    const form = document.getElementById('form');
+                    const result = document.getElementById('result');
+
+                    form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        const formData = new FormData(form);
+                        const object = Object.fromEntries(formData);
+                        const json = JSON.stringify(object);
+                        // result.innerHTML = "Veuillez patienter..."
+
+                        fetch('https://api.web3forms.com/submit', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'Accept': 'application/json'
+                            },
+                            body: json
+                        })
+                            .then(async (response) => {
+                                let json = await response.json();
+                                if (response.status == 200) {
+                                    result.innerHTML = "Votre message a bien été envoyé !";
+                                } else {
+                                    console.log(response);
+                                    result.innerHTML = json.message;
+                                }
+                            })
+                            .catch(error => {
+                                console.log(error);
+                                result.innerHTML = "Erreur lors de l'envoi du message";
+                            })
+                            .then(function () {
+                                form.reset();
+                                setTimeout(() => {
+                                    result.style.display = "none";
+                                }, 3000);
+                            });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="networks">
+            <a href="https://github.com/alexgo-dev/">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/sun_the_dev">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alex-gobert-48ab1b270/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const lenis = new Lenis({})
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+
+        let image2 = document.querySelector('.img-2');
+        let image3 = document.querySelector('.img-3');
+        let image4 = document.querySelector('.img-4');
+        let image5 = document.querySelector('.img-5');
+        let image6 = document.querySelector('.img-6');
+        let image7 = document.querySelector('.img-7');
+        let image8 = document.querySelector('.img-8');
+        let image9 = document.querySelector('.img-9');
+        let image10 = document.querySelector('.img-10');
+
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            image2.style.bottom = value * -0.2 + 'px';
+            image3.style.bottom = value * -0.3 + 'px';
+            image4.style.bottom = value * -0.4 + 'px';
+            image5.style.bottom = value * -0.5 + 'px';
+            image6.style.bottom = value * -0.6 + 'px';
+            image7.style.bottom = value * -0.7 + 'px';
+            image8.style.bottom = value * -0.3 + 'px';
+            image9.style.bottom = value * -0.4 + 'px';
+            image10.style.bottom = value * -0.5 + 'px';
+            text.style.bottom = value * -1.2 + 'px';
+
+            let opacity = 1 - (value / 500);
+
+            opacity = Math.max(0, Math.min(1, opacity));
+
+            text.style.opacity = opacity;
+        })
+    </script>
+
+
 </body>
 
 </html>
