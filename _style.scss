@@ -41,25 +41,25 @@ header {
 
     nav {
         .menu {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
 
-        li a {
-            position: relative;
-            color: white;
-            font-size: 1.25rem;
-            font-weight: 600;
-            border-radius: 0.4rem;
-            transition: color 0.4s ease;
-        }
+            li a {
+                position: relative;
+                color: white;
+                font-size: 1.25rem;
+                font-weight: 600;
+                border-radius: 0.4rem;
+                transition: color 0.4s ease;
+            }
 
-        li a:hover {
-            color: #0ee0ff;
+            li a:hover {
+                color: #0ee0ff;
+            }
         }
     }
-}
 }
 
 #hero {
@@ -328,13 +328,13 @@ footer {
         a {
             color: #0ee0ff;
             &:not(:last-child) {
-            margin-right: 100px;
-        }
-        i {
-            font-size: 30px;
+                margin-right: 100px;
+            }
+            i {
+                font-size: 30px;
+            }
         }
     }
-}
 }
 
 @media only screen and (max-width: 768px) {
@@ -400,6 +400,19 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
+    header {
+        nav {
+            .menu {
+                gap: 30px;
+                li {
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
     #hero {
         h1 {
             font-size: 3rem;
@@ -413,12 +426,14 @@ footer {
         }
     }
 
-    #portfolio .portfolio-item {
+    #portfolio {
         h2 {
             font-size: 3rem;
         }
-        h3 {
-            font-size: 2.5rem;
+        .portfolio-item {
+            h3 {
+                font-size: 2.5rem;
+            }
         }
     }
 
@@ -427,4 +442,41 @@ footer {
             font-size: 3rem;
         }
     }
+
+    .h-captcha {
+        transform: scale(0.77);
+        transform-origin: 0 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        nav {
+            .menu {
+                gap: 30px;
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        h2 {
+            font-size: 2.7rem;
+        }
+    }
+
+    #portfolio  {
+        h2 {
+            font-size: 2.8rem;
+        }
+        .portfolio-item {
+        h3 {
+            font-size: 2.3rem;
+        }
+    }
+}
 }
