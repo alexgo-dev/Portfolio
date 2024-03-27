@@ -85,57 +85,57 @@ header nav .menu li a:hover {
   z-index: -1;
 }
 #hero .images .img-1 {
-  background: url(images/1_frontcover.png);
+  background: url(images/1_frontcover.webp);
   background-position: center;
   background-size: cover;
   z-index: 10;
 }
 #hero .images .img-2 {
-  background: url(images/2_front.png);
+  background: url(images/2_front.webp);
   background-position: center;
   background-size: cover;
   z-index: 10;
 }
 #hero .images .img-3 {
-  background: url(images/3_middle.png);
+  background: url(images/3_middle.webp);
   background-position: center;
   background-size: cover;
   z-index: 10;
 }
 #hero .images .img-4 {
-  background: url(images/4_behind.png);
+  background: url(images/4_behind.webp);
   background-position: center;
   background-size: cover;
   z-index: 8;
 }
 #hero .images .img-5 {
-  background: url(images/5_sun.png);
+  background: url(images/5_sun.webp);
   background-position: center;
   background-size: cover;
   z-index: 7;
 }
 #hero .images .img-6 {
-  background: url(images/6_clouds.png);
+  background: url(images/6_clouds.webp);
   background-position: center;
   background-size: cover;
 }
 #hero .images .img-7 {
-  background: url(images/7_stars.png);
+  background: url(images/7_stars.webp);
   background-position: center;
   background-size: cover;
 }
 #hero .images .img-8 {
-  background: url(images/8_comet.png);
+  background: url(images/8_comet.webp);
   background-position: center;
   background-size: cover;
 }
 #hero .images .img-9 {
-  background: url(images/9_comet2.png);
+  background: url(images/9_comet2.webp);
   background-position: center;
   background-size: cover;
 }
 #hero .images .img-10 {
-  background: url(images/10_background.png);
+  background: url(images/10_background.webp);
   background-position: center;
   background-size: cover;
 }
